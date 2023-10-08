@@ -33,7 +33,7 @@ def imagefolder_loader(path):
 
 def sample_data(dataloader, image_size=4):
     transform = transforms.Compose([
-        transforms.Resize(image_size+int(image_size*0.2)+1),
+        transforms.Resize(image_size),
         #transforms.RandomCrop(image_size),
         transforms.RandomHorizontalFlip(),
         transforms.ToTensor(),
